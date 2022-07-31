@@ -1,0 +1,24 @@
+Config:
+
+1) npm init
+2) tsc --init
+3) npm install --save-dev typescript @types/node ts-node ts-node-dev
+4) npm i express @types/express
+
+RUN:
+
+1) tsc
+   - node app.js
+2) tsc app.ts app.js
+
+=> Using tsc it will create .js file of .ts file at the same place 
+=> To change .js file path change in tsconfig.js file 
+   -> rootDir is location from where file(.ts) has to take 
+   -> outDir is output file(.js) have to genrate (make seperate folder for simplicity i.e "./build")
+       - It will put all the .js file inside build folder.
+       
+3) ts-node app.ts
+   - This method will not create .js file.
+   - for dev and prod server use differnt script to start server as mentioned in package.json
+
+4) ts-node-dev is 
